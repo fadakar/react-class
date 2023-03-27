@@ -12,17 +12,6 @@
       "category": "smartphones"
     },
     {
-      "id": 2,
-      "title": "iPhone X",
-      "description": "SIM-Free, Model A19211 6.5-inch Super Retina HD display with OLED technology A12 Bionic chip with ...",
-      "price": 899,
-      "discountPercentage": 17.94,
-      "rating": 4.44,
-      "stock": 34,
-      "brand": "Apple",
-      "category": "smartphones"
-    },
-    {
       "id": 3,
       "title": "Samsung Universe 9",
       "description": "Samsung's new variant which goes beyond Galaxy to the Universe",
@@ -54,28 +43,6 @@
       "stock": 32,
       "brand": "Huawei",
       "category": "smartphones"
-    },
-    {
-      "title": "Monitor LG 14in-1545",
-      "description": "",
-      "price": 1245,
-      "discountPercentage": 0,
-      "rating": 1,
-      "stock": 5,
-      "brand": "LG",
-      "category": "Monitor",
-      "id": 6
-    },
-    {
-      "title": "dfd",
-      "description": "sflgjksfgj",
-      "price": 232,
-      "discountPercentage": 2,
-      "rating": 0,
-      "stock": 0,
-      "brand": "apple",
-      "category": "smartphone",
-      "id": 7
     },
     {
       "title": "sdsds",

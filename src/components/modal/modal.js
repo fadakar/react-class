@@ -1,0 +1,38 @@
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+
+function ConfirmModal({
+                          id,
+                          title,
+                          children,
+                          btnAcceptTitle = 'Yes',
+                          btnRejectTitle = 'No',
+                          isShow = false,
+                          onAccept = undefined,
+                          onReject = undefined
+                      }) {
+
+    return (
+        <Modal
+            onHide={onReject}
+            show={isShow}
+            aria-labelledby="contained-modal-title-vcenter"
+            centered
+        >
+            <Modal.Header closeButton>
+                <Modal.Title id="contained-modal-title-vcenter">
+                    {title} - {id}
+                </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+                {children}
+            </Modal.Body>
+            <Modal.Footer>
+                <Button variant="secondary" onClick={onReject}>{btnRejectTitle}</Button>
+                <Button variant="primary" onClick={onAccept?.bind(this, id)}>{btnAcceptTitle}</Button>
+            </Modal.Footer>
+        </Modal>
+    );
+}
+
+export default ConfirmModal;

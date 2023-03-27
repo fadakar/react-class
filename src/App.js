@@ -13,6 +13,7 @@ import { StateInFC } from "./tutorials/state-in-fc";
 
 import { UsersPage } from "./pages/users";
 import { ProductsPage, ProductNewPage, ProductEditPage } from "./pages/products";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -32,7 +33,7 @@ function App() {
             <Route path="users" element={<UsersPage />} />
             <Route path="products" element={<ProductsPage />} />
             <Route path="products/new" element={<ProductNewPage />} />
-            {/* 
+            {/*
                 URL Parameter Syntax
                 path='path/:parameter'
                 path='path/:parameter/path'
