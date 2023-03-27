@@ -1,0 +1,31 @@
+.tutorials-page {
+    display: flex;
+    padding: 1em;
+}
+.tutorials-page aside {
+    flex-basis: 25%;
+    width: 25%;
+}
+.tutorials-page aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tutorials-page aside ul a {
+    display: block;
+    color: #555;
+    text-decoration: none;
+    padding: 0.5em;
+}
+.tutorials-page aside ul a:hover{
+    background-color: #f1f1f1;
+}
+.tutorials-page aside ul :global a.active{
+    background-color: #f1f1f1;
+}
+.tutorials-page .content {
+    width: 75%;
+    flex-basis: 75%;
+    padding: 0.5em;
+}

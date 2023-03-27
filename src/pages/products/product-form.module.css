@@ -1,0 +1,53 @@
+.product-form {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10px;
+}
+.product-form label,
+.product-form input,
+.product-form textarea {
+    padding: 6px;
+}
+.product-form input,
+.product-form textarea {
+    border-radius: 4px;
+    outline: none;
+    border: 1px solid;
+    resize: none;
+}
+.product-form input:focus,
+.product-form textarea:focus {
+    background-color: #f1f1f1;
+}
+
+.product-form .footer {
+    grid-column: 1 / span 2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.cancel-button,
+.save-button{
+    cursor: pointer;
+    border: none;
+    padding: 8px 16px;
+    margin-left: 5px;
+}
+.cancel-button {
+    background-color: orangered;
+    color: white;
+}
+.cancel-button:hover {
+    background-color: hsl(16, 100%, 30%);
+}
+.save-button {
+    background-color: green;
+    color: white;
+}
+.save-button:hover {
+    background-color: hsl(120, 100%, 35%);
+}
