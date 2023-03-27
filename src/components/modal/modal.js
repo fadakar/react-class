@@ -2,9 +2,10 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function ConfirmModal({
-                          id,
+
                           title,
                           children,
+                          data = undefined,
                           btnAcceptTitle = 'Yes',
                           btnRejectTitle = 'No',
                           isShow = false,
@@ -21,7 +22,7 @@ function ConfirmModal({
         >
             <Modal.Header closeButton>
                 <Modal.Title id="contained-modal-title-vcenter">
-                    {title} - {id}
+                    {title}
                 </Modal.Title>
             </Modal.Header>
             <Modal.Body>
@@ -29,7 +30,7 @@ function ConfirmModal({
             </Modal.Body>
             <Modal.Footer>
                 <Button variant="secondary" onClick={onReject}>{btnRejectTitle}</Button>
-                <Button variant="primary" onClick={onAccept?.bind(this, id)}>{btnAcceptTitle}</Button>
+                <Button variant="primary" onClick={onAccept?.bind(this, data)}>{btnAcceptTitle}</Button>
             </Modal.Footer>
         </Modal>
     );
